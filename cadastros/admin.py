@@ -12,7 +12,7 @@ class EmpresaAdmin(admin.ModelAdmin):
 class FilialAdmin(admin.ModelAdmin):
     list_display = ("nome", "empresa", "cidade", "estado", "ativa")
     list_filter = ("empresa", "ativa")
-    search_fields = ("nome", "cnpj")
+    search_fields = ("nome", "cnpj", "cidade")
 
 
 @admin.register(Funcionario)
